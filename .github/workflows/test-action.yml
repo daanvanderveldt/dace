@@ -15,7 +15,7 @@ jobs:
       uses: gcattan/git-quality-check@v0.1.2
       with:
         badWords: WIP, todo
-        mainBranches: origin/master, origin/develop, origin/main
+        mainBranches: origin/data, origin/res
     - name: Check outputs
       run: |
         test "${{ steps.git-quality-check.outputs.score }}" != ""
